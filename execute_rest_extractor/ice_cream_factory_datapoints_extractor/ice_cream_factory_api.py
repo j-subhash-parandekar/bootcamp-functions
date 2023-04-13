@@ -97,7 +97,7 @@ class IceCreamFactoryAPI:
 
         for timeseries in datapoints_dict:
             ts_datapoints = datapoints_dict[timeseries]
-            # convert timestamp to ms (*1000) for CDF uploads
+            # convert timestamp to ms (*1000) for CDF uploads. Dummy !
             datapoints_to_upload[timeseries] = [(dp[0] * 1000, dp[1]) for dp in ts_datapoints]
 
         return datapoints_to_upload
